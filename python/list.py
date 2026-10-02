@@ -1,12 +1,13 @@
 marks = [11, 66, 88.9, 'g', "anud"]
 print(marks)
 print(marks[-1])
+print(marks[::-1])#reverse
 print(type(marks) , len(marks))
 
 marks2 = marks[1:3]
 print(marks2)
 
-marks2.append("fuck")
+marks2.append("fuck")#add to last
 marks2.insert(1,55)
 print(marks2)
 
