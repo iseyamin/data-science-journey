@@ -12,3 +12,8 @@ print("Sample data Frame:")
 print(df)
 print("Descriptive staticstics:")
 print(df.describe())
+
+#For shape and column name
+#print("Shape:",df.shape) or,
+print(f'Shape: {df.shape}')
+print("Columns: ",df.columns)
