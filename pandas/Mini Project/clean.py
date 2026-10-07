@@ -34,8 +34,9 @@ GroupByBrand = df.groupby('Company').agg(
     Total_Profit=('Profit','sum'),
     Sale_Count =('Profit','count')).reset_index()
 GroupByBrand.sort_values(by='Total_Profit', ascending=False, inplace=True)
+GroupByBrand['Total_Profit'] = GroupByBrand['Total_Profit'].round(2) #handle round value
 #print(GroupByBrand)
 
 #Save csv file
-df.to_csv("Clean_SalesReport.csv",index=False)
+#df.to_csv("Clean_SalesReport.csv",index=False)
 GroupByBrand.to_csv("Company_Profit.csv",index=False)
